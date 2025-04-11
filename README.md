@@ -54,4 +54,4 @@ Use the included download script to download files in parallel
 ./download.sh
 ```
 
-The script will attempt to download multiple files in parallel based on the contents of urls.txt. It runs in the foreground by default. If you want to monitor progress you should open another session and do `tail -f download.log`. Modify the args to `wget` and `parallel` as needed for your desired download behavior. By default `wget` will attempt to download in a resume-able manner so that you should be able to cancel the script and restart as needed to resume downloads. And `parallel` will keep a lot of the downloaded files too.
+The script will attempt to download multiple files in parallel based on the contents of urls.txt. It runs in the foreground by default. If you want to monitor progress you should open another session and do `tail -f download.log`. Modify the args to `wget` and `parallel` as needed for your desired download behavior. By default `wget` will attempt to download in a resume-able manner so that you should be able to cancel the script and restart as needed to resume downloads. And `parallel` will keep a log of the downloaded files too.
